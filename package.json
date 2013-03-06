@@ -1,0 +1,24 @@
+{
+  "name": "sizzbot"
+, "version": "0.0.1"
+, "private": true
+, "engines": {
+    "node": ">= 0.8.x"
+  , "npm": "1.1.x"
+  }
+, "dependencies": {
+    "cheerio": "0.7.0"
+  , "gitio": "1.0.1"
+  , "htmlparser": "1.7.6"
+  , "hubot": ">=2.4.7"
+  , "hubot-irc": "0.1.x"
+  , "hubot-scripts": "git://github.com/github/hubot-scripts.git"
+  , "jquery": "*"
+  , "jsdom": "0.2.14"
+  , "optparse": "1.0.3"
+  , "sandbox": "0.8.3"
+  , "soupselect": "0.2.0"
+  , "underscore": "*"
+  , "wolfram": "0.2.2"
+  }
+}
