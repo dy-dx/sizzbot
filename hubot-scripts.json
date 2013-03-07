@@ -14,6 +14,7 @@
 , "hangman.coffee"
 , "hashing.coffee"
 , "history.coffee"
+, "http-post-say.coffee"
 , "imgur-info.coffee"
 , "insult.coffee"
 , "isup.coffee"
