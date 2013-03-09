@@ -2,7 +2,6 @@
 , "abstract.coffee"
 , "ackbar.coffee"
 , "ascii.coffee"
-, "bitbucket.coffee"
 , "bitbucket-activity.coffee"
 , "brb.coffee"
 , "catfacts.coffee"
