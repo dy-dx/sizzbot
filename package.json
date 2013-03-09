@@ -8,11 +8,14 @@
   }
 , "dependencies": {
     "cheerio": "0.7.0"
+  , "date-utils": ">=1.2.5"
   , "gitio": "1.0.1"
   , "htmlparser": "1.7.6"
   , "hubot": ">=2.4.7"
-  , "hubot-irc": "0.1.x"
+  , "hubot-irc": ">=0.1.1"
+  , "hubot-irc": "git://github.com/dy-dx/hubot-irc.git#authserv"
   , "hubot-scripts": "git://github.com/github/hubot-scripts.git"
+  , "hubucket": "git+ssh://git@github.com:pyro2927/hubucket.git"
   , "jquery": "*"
   , "jsdom": "0.2.14"
   , "optparse": "1.0.3"
