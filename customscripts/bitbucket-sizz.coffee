@@ -16,13 +16,18 @@
 module.exports = (robot) ->
   robot.router.post '/hubot/bitbucket/:room', (req, res) ->
     room = '#' + req.params.room
-    data = req.body
-    commits = data.commits
+    try
+      data = JSON.parse req.body.payload
+      commits = data.commits
+        
+      msg = "#{data.user} pushed #{commits.length} commits to #{data.repository.name}:\n\n"
+      msg += "[#{commit.branch}] r#{commit.revision} #{commit.message}\n" for commit in commits
       
-    msg = "#{data.user} pushed #{commits.length} commits to #{data.repository.name}:\n\n"
-    msg += "[#{commit.branch}] r#{commit.revision} #{commit.message}\n" for commit in commits
-    
-    robot.messageRoom room, msg
-      
-    res.writeHead 204, { 'Content-Length': 0 }
+      robot.messageRoom room, msg
+        
+      res.writeHead 204, { 'Content-Length': 0 }
+
+    catch error
+      console.log "bitbucket error: #{error}. Payload: #{req.body.payload}"
+
     res.end()
